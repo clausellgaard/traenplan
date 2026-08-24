@@ -1,1 +1,1 @@
-console.log('Founder Patch 001 loaded');
+// app module for TrænPlan RC1

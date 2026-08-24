@@ -1,1 +1,1 @@
-export const STORAGE_KEY='traenplan_v04_rc1';
+// storage module for TrænPlan RC1
