@@ -1,0 +1,1 @@
+export function startWorkout(state){state.todayWorkoutCompleted=true;state.xp=(state.xp||0)+10;return state;}

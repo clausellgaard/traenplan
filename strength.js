@@ -1,0 +1,1 @@
+export function completeStrength(state){state.strengthCompletedToday=true;state.xp=(state.xp||0)+8;return state;}
