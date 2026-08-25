@@ -3,17 +3,21 @@ const K="traenplan-v03";const D={level:1,xp:0,done:0,notify:true,week:[["Man","L
     <div class="eyebrow">DAGENS TRÆNING</div>
     <div class="title" style="font-size:27px">${x.name}</div>
     <p class="muted">${x.desc}</p>
-    <p class="muted">Tid: ${x.time}</p>
+    <div class="row"><span class="badge">${x.type}</span><span>${x.time||"Fleksibel tid"}</span></div>
+    <br>
     <div class="exercise"><b>Opvarmning</b><div class="muted">5 min rolig jog</div></div>
     <div class="exercise"><b>Hovedpas</b><div class="muted">20 min let tempo (Zone 2)</div></div>
     <div class="exercise"><b>Nedjog</b><div class="muted">5 min rolig jog</div></div>
-    <button class="btn secondary" id="completeRun">Gennemfør træning</button>
+    <br>
+    <button class="btn secondary" id="finishRun">Gennemfør træning (+25 XP)</button>
   </section>`;
-  completeRun.onclick=()=>{
+  finishRun.onclick=()=>{
     if(!x.done){
       x.done=true;
       s.done++;
       toast(add(25) ? "Nyt niveau! 🎉" : "+25 XP");
+    } else {
+      toast("Dagens træning er allerede gennemført.");
     }
     page="home";
     render();
