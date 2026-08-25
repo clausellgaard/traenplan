@@ -1,9 +1,20 @@
-# TrænPlan v0.4 RC1 Complete
+# Trænplan v0.3
 
-Founder Patch RC1 oven på v0.3.
+PWA-prototype til løbere, hvor løb og styrke samles i én enkel plan.
 
-## Nye funktioner
-- Åbn træning virker.
-- Start træning markerer dagens løbetur som gennemført.
-- Gennemfør styrkepas markerer tirsdag som gennemført.
-- XP og flueben gemmes lokalt.
+### v0.3
+- Forside med dagens træning
+- Ugeplan
+- Klokkeslæt på hvert pas
+- Påmindelses-indstilling
+- Gennemfør pas og optjen XP
+- Progressions-avatar/evolution
+- Styrkeplan A
+- Lokal lagring
+- PWA manifest og service worker
+
+### GitHub Pages
+Upload alle filer til `main` i repositoryets rod.
+Vælg derefter Settings → Pages → Deploy from a branch → main → /(root).
+
+Rigtige planlagte iOS-notifikationer er næste udviklingstrin.
